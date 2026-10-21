@@ -68,7 +68,9 @@
     "results_behind": "Results may be up to {count, plural, one {# ledger} other {# ledgers}} behind",
     "all_regions": "All regions",
     "any_position": "Any position",
-    "save_search_placeholder": "e.g. Lagos strikers"
+    "save_search_placeholder": "e.g. Lagos strikers",
+    "rateLimited": "Searching too fast — please wait {seconds, plural, one {# second} other {# seconds}} and try again.",
+    "rateLimitedNoRetry": "Searching too fast — please slow down and try again."
   },
   "trial_offer": {
     "form_label": "Log trial offer",
@@ -153,7 +155,25 @@
     "paused_hint": "Temporarily unavailable — the platform is paused for maintenance"
   },
   "dispute_modal": {
-    "character_count": "{count} of {max} characters"
+    "character_count": "{count} of {max} characters",
+    "evidence": {
+      "submit": "Submit evidence",
+      "unsupported_type": "Unsupported file type. Allowed: JPEG, PNG, WebP, GIF, MP4, WebM, PDF.",
+      "too_large": "File must be under {size} MB.",
+      "submit_failed": "Submission failed. Try again.",
+      "submitted": "✓ Evidence submitted. The admin will review the updated timeline.",
+      "add_more": "Add more",
+      "validator_notice": "You are responding as the validator who approved this milestone. Your response will be visible to the player and the reviewing admin.",
+      "file_label": "Evidence file",
+      "required": "(required)",
+      "file_size": "{name} ({size} KB)",
+      "allowed_formats": "JPEG, PNG, WebP, GIF, MP4, WebM, PDF — max {size} MB",
+      "note_label": "Note",
+      "note_hint": "(optional, max {kind, select, response {your response} other {context}})",
+      "placeholder_validator": "Explain your reasoning for the milestone approval…",
+      "placeholder_player": "Add context about this evidence…",
+      "uploading": "Uploading…"
+    }
   },
   "actions": {
     "refresh": "Refresh",
@@ -243,7 +263,16 @@
     "roster_error": "Could not load approved players. The indexer may be temporarily unavailable.",
     "roster_retry": "Retry",
     "roster_count_one": "1 player",
-    "roster_count_other": "{count} players"
+    "roster_count_other": "{count} players",
+    "chip": {
+      "loading": "Checking validator…",
+      "active": "Active validator",
+      "former": "Former validator",
+      "unknown": "Validator status unknown",
+      "fetching": "Fetching validator information…",
+      "milestones_approved": "{status} · {count, plural, one {# milestone} other {# milestones}} approved",
+      "academy_affiliated": "Academy-affiliated"
+    }
   },
   "admin": {
     "title": "Admin Dashboard",
@@ -691,6 +720,15 @@
       "milestone_approvals_description": "Notify me when a validator approves one of my milestones.",
       "contact_unlocks_label": "Contact unlocks",
       "contact_unlocks_description": "Notify me when I unlock a player’s contact details."
+    },
+    "push": {
+      "unsupported": "Push notifications aren’t supported in this browser.",
+      "denied": "Notifications are blocked. Allow them in your browser’s site settings to enable milestone alerts.",
+      "turned_off": "Push notifications turned off.",
+      "title": "Milestone approval alerts",
+      "description": "Get a browser notification when a coach or academy approves one of your milestones — even when the app is closed.",
+      "turn_off": "Turn off",
+      "enable": "Enable"
     }
   },
   "stats": {

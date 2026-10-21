@@ -85,7 +85,9 @@
     "results_behind": "Les résultats peuvent être en retard d'au plus {count, plural, one {# ledger} other {# ledgers}}",
     "all_regions": "Toutes les régions",
     "any_position": "Tous les postes",
-    "save_search_placeholder": "ex. attaquants de Lagos"
+    "save_search_placeholder": "ex. attaquants de Lagos",
+    "rateLimited": "Recherches trop rapides — veuillez patienter {seconds, plural, one {# seconde} other {# secondes}} et réessayer.",
+    "rateLimitedNoRetry": "Recherches trop rapides — veuillez ralentir et réessayer."
   },
   "trial_offer": {
     "form_label": "Enregistrer une offre d'essai",
@@ -170,7 +172,25 @@
     "paused_hint": "Indisponible temporairement — la plateforme est en pause pour maintenance"
   },
   "dispute_modal": {
-    "character_count": "{count} sur {max} caractères"
+    "character_count": "{count} sur {max} caractères",
+    "evidence": {
+      "submit": "Soumettre la preuve",
+      "unsupported_type": "Type de fichier non pris en charge. Formats autorisés : JPEG, PNG, WebP, GIF, MP4, WebM, PDF.",
+      "too_large": "Le fichier doit faire moins de {size} Mo.",
+      "submit_failed": "Échec de l’envoi. Réessayez.",
+      "submitted": "✓ Preuve soumise. L’administrateur examinera la chronologie mise à jour.",
+      "add_more": "Ajouter d’autres",
+      "validator_notice": "Vous répondez en tant que validateur ayant approuvé ce jalon. Votre réponse sera visible par le joueur et l’administrateur chargé de l’examen.",
+      "file_label": "Fichier de preuve",
+      "required": "(obligatoire)",
+      "file_size": "{name} ({size} Ko)",
+      "allowed_formats": "JPEG, PNG, WebP, GIF, MP4, WebM, PDF — {size} Mo max.",
+      "note_label": "Note",
+      "note_hint": "(facultatif, max {kind, select, response {votre réponse} other {contexte}})",
+      "placeholder_validator": "Expliquez les raisons de la validation de ce jalon…",
+      "placeholder_player": "Ajoutez du contexte à cette preuve…",
+      "uploading": "Envoi en cours…"
+    }
   },
   "actions": {
     "refresh": "Actualiser",
@@ -243,7 +263,16 @@
     "roster_error": "Impossible de charger les joueurs approuvés. L'indexeur est peut-être temporairement indisponible.",
     "roster_retry": "Réessayer",
     "roster_count_one": "1 joueur",
-    "roster_count_other": "{count} joueurs"
+    "roster_count_other": "{count} joueurs",
+    "chip": {
+      "loading": "Vérification du validateur…",
+      "active": "Validateur actif",
+      "former": "Ancien validateur",
+      "unknown": "Statut du validateur inconnu",
+      "fetching": "Récupération des informations du validateur…",
+      "milestones_approved": "{status} · {count, plural, one {# jalon validé} other {# jalons validés}}",
+      "academy_affiliated": "Affilié à une académie"
+    }
   },
   "admin": {
     "title": "Tableau de bord admin",
@@ -691,6 +720,15 @@
       "milestone_approvals_description": "M’avertir lorsqu’un validateur approuve l’un de mes jalons.",
       "contact_unlocks_label": "Déblocages de contact",
       "contact_unlocks_description": "M’avertir lorsque je débloque les coordonnées d’un joueur."
+    },
+    "push": {
+      "unsupported": "Les notifications push ne sont pas prises en charge par ce navigateur.",
+      "denied": "Les notifications sont bloquées. Autorisez-les dans les paramètres du site de votre navigateur pour activer les alertes de jalons.",
+      "turned_off": "Notifications push désactivées.",
+      "title": "Alertes de validation de jalons",
+      "description": "Recevez une notification du navigateur lorsqu’un entraîneur ou une académie valide l’un de vos jalons — même lorsque l’application est fermée.",
+      "turn_off": "Désactiver",
+      "enable": "Activer"
     }
   },
   "stats": {

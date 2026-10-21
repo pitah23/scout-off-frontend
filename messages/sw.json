@@ -125,7 +125,16 @@
     "roster_error": "Imeshindikana kupakia wachezaji walioidhinishwa. Kiashiria huenda hakipatikani kwa sasa.",
     "roster_retry": "Jaribu tena",
     "roster_count_one": "mchezaji 1",
-    "roster_count_other": "wachezaji {count}"
+    "roster_count_other": "wachezaji {count}",
+    "chip": {
+      "loading": "Inakagua mthibitishaji…",
+      "active": "Mthibitishaji hai",
+      "former": "Mthibitishaji wa zamani",
+      "unknown": "Hali ya mthibitishaji haijulikani",
+      "fetching": "Inapata taarifa za mthibitishaji…",
+      "milestones_approved": "{status} · {count, plural, one {hatua # imeidhinishwa} other {hatua # zimeidhinishwa}}",
+      "academy_affiliated": "Inahusishwa na akademia"
+    }
   },
   "scout_dashboard": {
     "title": "Dashibodi ya Scout",
@@ -143,7 +152,9 @@
     "results_behind": "Matokeo yanaweza kuwa nyuma ya {count, plural, one {ledger #} other {ledgers #}}",
     "all_regions": "Maeneo yote",
     "any_position": "Nafasi yoyote",
-    "save_search_placeholder": "mf. washambuliaji wa Lagos"
+    "save_search_placeholder": "mf. washambuliaji wa Lagos",
+    "rateLimited": "Unatafuta haraka mno — tafadhali subiri {seconds, plural, one {sekunde #} other {sekunde #}} kisha ujaribu tena.",
+    "rateLimitedNoRetry": "Unatafuta haraka mno — tafadhali punguza kasi kisha ujaribu tena."
   },
   "trial_offer": {
     "form_label": "Rekodi ofa ya majaribio",
@@ -228,7 +239,25 @@
     "paused_hint": "Haipatikani kwa muda — jukwaa limepumzishwa kwa matengenezo"
   },
   "dispute_modal": {
-    "character_count": "{count} ya {max} herufi"
+    "character_count": "{count} ya {max} herufi",
+    "evidence": {
+      "submit": "Wasilisha ushahidi",
+      "unsupported_type": "Aina ya faili haitumiki. Zinazoruhusiwa: JPEG, PNG, WebP, GIF, MP4, WebM, PDF.",
+      "too_large": "Faili lazima liwe chini ya MB {size}.",
+      "submit_failed": "Imeshindwa kuwasilisha. Jaribu tena.",
+      "submitted": "✓ Ushahidi umewasilishwa. Msimamizi atakagua ratiba iliyosasishwa.",
+      "add_more": "Ongeza zaidi",
+      "validator_notice": "Unajibu kama mthibitishaji aliyeidhinisha hatua hii. Jibu lako litaonekana kwa mchezaji na msimamizi anayekagua.",
+      "file_label": "Faili la ushahidi",
+      "required": "(inahitajika)",
+      "file_size": "{name} (KB {size})",
+      "allowed_formats": "JPEG, PNG, WebP, GIF, MP4, WebM, PDF — upeo MB {size}",
+      "note_label": "Maelezo",
+      "note_hint": "(si lazima, upeo {kind, select, response {jibu lako} other {muktadha}})",
+      "placeholder_validator": "Eleza sababu zako za kuidhinisha hatua hii…",
+      "placeholder_player": "Ongeza muktadha kuhusu ushahidi huu…",
+      "uploading": "Inapakia…"
+    }
   },
   "actions": {
     "refresh": "Refresh",
@@ -691,6 +720,15 @@
       "milestone_approvals_description": "Nijulishe mthibitishaji anapoidhinisha mojawapo ya hatua zangu.",
       "contact_unlocks_label": "Kufungua mawasiliano",
       "contact_unlocks_description": "Nijulishe ninapofungua maelezo ya mawasiliano ya mchezaji."
+    },
+    "push": {
+      "unsupported": "Arifa za push hazitumiki kwenye kivinjari hiki.",
+      "denied": "Arifa zimezuiwa. Ziruhusu katika mipangilio ya tovuti ya kivinjari chako ili kuwasha arifa za hatua.",
+      "turned_off": "Arifa za push zimezimwa.",
+      "title": "Arifa za idhini za hatua",
+      "description": "Pokea arifa ya kivinjari kocha au akademia inapoidhinisha mojawapo ya hatua zako — hata programu ikiwa imefungwa.",
+      "turn_off": "Zima",
+      "enable": "Washa"
     }
   },
   "stats": {

@@ -1,6 +1,7 @@
 'use client';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 import { useDebounce } from '@/hooks/useDebounce';
 import { useToast } from '@/components/ui/Toast';
 import type { PlayerFilter } from '@/types';
@@ -39,6 +40,7 @@ export function useScoutDashboardFilters({
   const router = useRouter();
   const searchParams = useSearchParams();
   const { show: showToast } = useToast();
+  const t = useTranslations('scout_dashboard');
 
   const [remainingSec, setRemainingSec] = useState<number | null>(null);
 
@@ -50,7 +52,7 @@ export function useScoutDashboardFilters({
 
     if (retryAfterSec === null) {
       showToast({
-        message: 'Searching too fast — please slow down and try again.',
+        message: t('rateLimitedNoRetry'),
         variant: 'warning',
       });
       setRemainingSec(null);
@@ -59,10 +61,10 @@ export function useScoutDashboardFilters({
 
     setRemainingSec(retryAfterSec);
     showToast({
-      message: `Searching too fast — please wait ${retryAfterSec}s and try again.`,
+      message: t('rateLimited', { seconds: retryAfterSec }),
       variant: 'warning',
     });
-  }, [isRateLimited, retryAfterSec, showToast]);
+  }, [isRateLimited, retryAfterSec, showToast, t]);
 
   // Countdown timer for rate limit
   useEffect(() => {
